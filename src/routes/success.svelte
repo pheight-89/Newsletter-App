@@ -44,7 +44,7 @@
 	button:hover {
 		background-image: linear-gradient(90deg, hsl(348, 100%, 66%), hsl(12, 100%, 63%));
 		cursor: pointer;
-		box-shadow: 0px 10px 20px 1px hsl(348, 100%, 66%);
+		box-shadow: 0px 10px 10px hsl(348, 100%, 66%, 0.4);
 	}
 
 	@media (max-width: 599px) {
