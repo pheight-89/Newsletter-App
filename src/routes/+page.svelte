@@ -20,6 +20,9 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Newsletter App | Subscribe</title>
+</svelte:head>
 <main>
 	{#if !showSuccessMessage}
 		<div class="image-container">
