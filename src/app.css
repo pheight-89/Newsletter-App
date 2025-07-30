@@ -31,7 +31,7 @@
 
 body {
 	font-family: var(--ff-main);
-	color: var(--clr-body-body);
+	color: var(--clr-body);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -55,7 +55,6 @@ main {
 
 	.content-container {
 		padding-inline: 2rem;
-		padding-block: 2rem;
 		margin: 0 auto;
 		order: 1;
 	}
@@ -71,7 +70,6 @@ main {
 	}
 	.content-container {
 		padding-inline: 4rem;
-		padding-block: 1rem;
 	}
 	.image-container {
 		padding: 0rem;
@@ -91,7 +89,7 @@ main {
 
 	.content-container {
 		padding-inline: 3rem;
-		padding-top: 6.5rem;
+		padding-top: 2rem;
 		margin: 0 auto;
 		line-height: 1.5;
 	}

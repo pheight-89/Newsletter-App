@@ -5,6 +5,6 @@
 
 <style>
 	h1 {
-		font-size: 2.625rem;
+		font-size: 3.5rem;
 	}
 </style>
