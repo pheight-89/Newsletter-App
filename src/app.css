@@ -1,0 +1,98 @@
+/* roboto-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/roboto-v48-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/roboto-v48-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+	--ff-main: 'Roboto', sans-serif;
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	--clr-main: hsl(4, 100%, 67%);
+	--clr-accent: hsl(12, 100%, 63%);
+	--clr-body: hsl(234, 29%, 20%);
+	--clr-body-background: hsl(235, 18%, 26%);
+	--clr-border: hsl(0, 0%, 58%);
+	--clr-main-background: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: var(--ff-main);
+	color: var(--clr-body-body);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--clr-body-background);
+}
+
+main {
+	background-color: var(--clr-main-background);
+	max-width: 930px;
+	border-radius: 1rem;
+	margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+	main {
+		height: 100%;
+		border-radius: 0;
+	}
+
+	.content-container {
+		padding-inline: 2rem;
+		padding-block: 2rem;
+		margin: 0 auto;
+		order: 1;
+	}
+
+	.image-container {
+		order: 2;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+	main {
+		height: 100%;
+	}
+	.content-container {
+		padding-inline: 4rem;
+		padding-block: 1rem;
+	}
+	.image-container {
+		padding: 0rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 30rem 1fr;
+		gap: 10px;
+	}
+	.image-container {
+		order: 2;
+		padding: 1.5rem;
+	}
+
+	.content-container {
+		padding-inline: 3rem;
+		padding-top: 6.5rem;
+		margin: 0 auto;
+		line-height: 1.5;
+	}
+}
