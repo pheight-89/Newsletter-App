@@ -1,38 +1,58 @@
-# sv
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Creating a project
+## Table of contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Overview
 
-# create a new project in my-app
-npx sv create my-app
-```
+### The challenge
 
-## Developing
+Users should be able to:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Add their email and submit the form
+- See a success message with their email after successfully submitting the form
+- See form validation messages if:
+  - The field is left empty
+  - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-```sh
-npm run dev
+### Screenshot
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+![](./newsletter_screenshot.png)
 
-## Building
+## My process
 
-To create a production version of your app:
+I wanted to try my hand at using Svelte 5. I broke down each of the sections of the application into its components and then built them seperately. Using mobile first design.
 
-```sh
-npm run build
-```
+### Built with
 
-You can preview the production build with `npm run preview`.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [Svelte 5](https://svelte.dev//) - UI Framework
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### What I learned
+
+I learned how to use the Svelte runes such as $state() and $props().
+
+### Continued development
+
+I just want to continue using Svelte and eventualy master the framework. I really enjoyed the development process.
+
+### Useful resources
+
+- [Syntax: Svelte 5 Basics - Complete Svelte 5 Course for Beginners](https://youtu.be/8DQailPy3q8?si=aVzRqMIPSGzSwLE0) - This helped me learn the basics of Svelte. I really enjoyed how Scott Tolinksi presented the concepts and will continue to learn with his and Syntax.fm resources.
